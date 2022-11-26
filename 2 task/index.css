@@ -1,0 +1,441 @@
+@import "./_reset.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap");
+
+body {
+  margin: 46px auto 20px;
+  width: 80%;
+  max-width: 1143px;
+  background-color: #0e1014;
+  color: #e4e5ea;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 400;
+}
+h1 span {
+  font-weight: 900;
+  background-image: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+h2 {
+  text-align: right;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+}
+h2 span {
+  background-image: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%);
+  font-weight: 700;
+
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #656566;
+  margin-bottom: 20px;
+  line-height: 17px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.icons img {
+  width: 20px;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+header .logo {
+  margin-right: 52px;
+}
+header .logo img {
+  width: 140px;
+}
+header .logo p {
+  font-family: "Montserrat";
+  font-size: 10px;
+  font-weight: 300;
+  margin-top: 10px;
+  line-height: 12px;
+}
+header .menu {
+  display: flex;
+}
+header .menu .content {
+  display: flex;
+}
+header .menu .content p + p {
+  margin-left: 30px;
+}
+header .contacts {
+  display: flex;
+}
+header .contacts .icons {
+  margin-left: 47px;
+}
+header .contacts .icons img + img {
+  margin-left: 30px;
+}
+
+main {
+  margin: 64px 0 124px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main .left p {
+  margin-top: 30px;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: "Montserrat";
+}
+main .right {
+  width: 300px;
+  text-align: right;
+}
+main .right .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main .right .content .block {
+  margin-top: 30px;
+}
+main .right .content.min {
+  display: none;
+}
+main .right .content p {
+  margin-top: 6px;
+  width: 135px;
+  text-align: right;
+  font-family: "Montserrat";
+}
+main .right .button p {
+  display: inline-block;
+  padding: 21px 34px;
+  text-align: right;
+  margin-top: 61px;
+  background-color: #4077f3;
+  font-weight: 500;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .left {
+  display: flex;
+}
+footer .content p + p {
+  margin-top: 10px;
+}
+footer .menu {
+  margin-left: 98px;
+}
+footer .menu .content {
+  display: flex;
+}
+footer .menu .content .left {
+  display: block;
+}
+footer .menu .content .right {
+  margin-left: 52px;
+}
+footer .contacts {
+  display: flex;
+  width: auto;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+footer .contacts .icons {
+  margin: 21px 0 19px;
+}
+footer .contacts .icons img + img {
+  margin-left: 10px;
+}
+footer .contacts .info {
+  margin-top: 70px;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Montserrat";
+}
+footer .contacts .info span:last-of-type {
+  margin-top: 5px;
+  text-decoration: underline;
+}
+
+.ball {
+  position: absolute;
+  border-radius: 100%;
+  z-index: -1;
+}
+.ball._g-red {
+  background-color: #961a1a;
+  filter: blur(242px);
+  width: 311px;
+  height: 311px;
+  top: 251px;
+  left: -8%;
+}
+.ball._g-blue {
+  background-color: #833ab4;
+  filter: blur(242px);
+  width: 259px;
+  height: 259px;
+  top: -154px;
+  left: 41%;
+}
+.ball._r-red {
+  width: 83px;
+  height: 83px;
+  left: 34%;
+  top: 83px;
+  background: radial-gradient(
+    64% 64% at 27.25% 26.5%,
+    rgba(255, 208, 208, 0.536) 0%,
+    rgba(212, 93, 93, 0.264) 59.67%,
+    rgba(167, 49, 49, 0.248) 78.59%,
+    rgba(130, 25, 25, 0.248) 100%
+  );
+  box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+  backdrop-filter: blur(2px);
+}
+.ball._r-red-blur {
+  width: 28px;
+  height: 28px;
+  left: 56%;
+  top: 547px;
+
+  background: radial-gradient(
+      64% 64% at 27.25% 26.5%,
+      rgba(255, 208, 208, 0.48) 0%,
+      rgba(212, 93, 93, 0.248) 59.67%,
+      rgba(167, 49, 49, 0.264) 78.59%,
+      rgba(130, 25, 25, 0.232) 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+  filter: blur(2.5px);
+  backdrop-filter: blur(2px);
+}
+.ball._r-blue {
+  width: 60px;
+  height: 60px;
+  left: 57%;
+  top: -2px;
+
+  background: radial-gradient(
+      64% 64% at 27.25% 26.5%,
+      rgba(236, 208, 255, 0.64) 0%,
+      rgba(161, 93, 207, 0.24) 59.67%,
+      rgba(118, 49, 164, 0.208) 78.59%,
+      rgba(86, 24, 128, 0.232) 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
+  filter: blur(5px);
+  backdrop-filter: blur(2px);
+}
+
+@media (max-width: 1330px) {
+  header .contacts {
+    display: block;
+    text-align: right;
+  }
+  header .contacts p {
+    font-size: 14px;
+  }
+  header .contacts .icons {
+    margin-left: 0;
+  }
+}
+@media (max-width: 1019px) {
+  body {
+    margin: 0 auto;
+    width: 100%;
+    background-color: #0e1014;
+  }
+
+  h1 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  h3 {
+    font-size: 12px;
+  }
+  p {
+    font-size: 12px;
+  }
+
+  header .menu .logo,
+  header .contacts,
+  header .menu .content p:last-of-type {
+    display: none;
+  }
+  header {
+    width: 100%;
+    background-color: #0e1014;
+  }
+  header .menu {
+    width: 100%;
+  }
+  header .menu .content {
+    justify-content: space-between;
+    width: 50%;
+    min-width: 280px;
+    padding: 20px 16px;
+    margin: 0 auto;
+  }
+  header .menu .content p + p {
+    margin-left: 16px;
+  }
+
+  main {
+    width: 280px;
+    display: block;
+    margin: 40px auto 59px;
+  }
+  main .left p {
+    width: 100%;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 15px;
+  }
+  main .right,
+  main .right h2 {
+    text-align: left;
+  }
+  main .right {
+    margin-top: 45px;
+  }
+  main .right .content.base {
+    display: none;
+  }
+  main .right .content.min {
+    display: flex;
+    margin-top: 6px;
+    width: 270px;
+  }
+  main .right .content.min .block {
+    display: flex;
+    margin-top: 14px;
+    align-items: center;
+  }
+  main .right .content.min p {
+    text-align: left;
+    font-size: 13px;
+    font-family: "Montserrat";
+    width: 120px;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 16px;
+    display: inline-block;
+  }
+  main .right .content.min .line {
+    width: 10px;
+    height: 1px;
+    margin-right: 5px;
+    margin-top: 6px;
+    background: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%);
+  }
+  main .button {
+    display: none;
+  }
+
+  footer {
+    display: block;
+    padding: 41px 0 60px 16px;
+    width: 100%;
+    background-color: #0e1014;
+  }
+  footer .content {
+    width: 90%;
+  }
+  footer .content p {
+    font-size: 14px;
+  }
+  footer .left .menu .right-content {
+    margin-left: 40px;
+  }
+  footer,
+  footer .left {
+    display: block;
+  }
+  footer .left,
+  footer .contacts {
+    width: 280px;
+    margin: 0 auto;
+  }
+  footer .left .menu {
+    margin: 0 0 30px;
+  }
+  footer .about {
+    margin-bottom: 30px;
+  }
+  footer .contacts {
+    align-items: flex-start;
+    text-align: left;
+    width: 300px;
+  }
+  footer .contacts .icons {
+    margin: 8px 0 10px;
+  }
+  footer .contacts .info {
+    margin-top: 50px;
+  }
+
+  .ball {
+    position: absolute;
+    border-radius: 100%;
+    z-index: -1;
+  }
+  .ball._g-red {
+    filter: blur(196px);
+    width: 211px;
+    height: 211px;
+    top: 241px;
+    left: -55px;
+  }
+  .ball._g-blue {
+    filter: blur(196px);
+    top: 107px;
+    left: 258px;
+  }
+  .ball._r-red {
+    width: 43px;
+    height: 43px;
+    left: 49px;
+    top: 402px;
+  }
+  .ball._r-red-blur {
+    display: none;
+  }
+  .ball._r-blue {
+    width: 40px;
+    height: 40px;
+    left: 296px;
+    top: 236px;
+  }
+}

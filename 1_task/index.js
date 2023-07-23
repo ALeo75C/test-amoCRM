@@ -19,7 +19,7 @@ const createTimerAnimator = () => {
     timer = setInterval(() => {
       const time = fimeFormatted(seconds);
       const formatTime = time.map((i) => (i >= 10 ? `${i}` : `0${i}`));
-      timerEl.innerHTML = time.join(":");
+      timerEl.innerHTML = formatTime.join(":");
       seconds > 0 ? seconds-- : clearInterval(timer);
     }, 1000);
   };

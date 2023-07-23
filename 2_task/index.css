@@ -6,7 +6,7 @@
 body {
   margin: 46px auto 20px;
   width: 80%;
-  max-width: 1143px;
+  /* max-width: 1143px; */
   background-color: #0e1014;
   color: #e4e5ea;
   font-family: "Inter", sans-serif;
